@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --black: black;
+    --white: white;
+    --red: red;
+    --grey: grey;
+    --light-grey: rgb(205, 204, 204);
+}
+body{
+    font-family: sans-serif;
+}
+.main-container {
+    display: flex;
+    border: 2px solid var(--black);
+    border-radius: 2rem;
+    margin: 2rem;
+    padding: 2rem;
+    height: max-content;
+    justify-content: space-between;
+}
+
+.form-container{
+    font-size: 20px;
+    width: 50%;
+}
+
+.prompt {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 20px 0;
+    gap: 10px;
+}
+
+.prompt input{
+    font-size: 20px;
+    padding: 6px;
+    border-radius: 7px;
+}
+.second label:last-child{
+    color: var(--red);
+    font-size: 15px;
+    margin-left: 3px;
+}
+.second input{
+    color: var(--red);
+    border: 2px solid var(--red);
+}
+
+.update-btn {
+    font-size: 20px;
+    padding: 14px;
+    background: var(--black);
+    color: var(--white);
+    border: transparent;
+    border-radius: 7px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.results-container{
+    display: flex;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    font-size: 17px;
+    gap: 30px;
+    width: 100%;
+}
+
+.progress-bar-container{
+    display: flex;
+    justify-content: center;
+    place-content: center;
+    align-items: center;
+    background: conic-gradient(var(--white) 0% 35%, var(--black) 35% 100%);
+    border: 1px solid var(--light-grey);
+    border-radius: 50%;
+    height: 90%;
+    width: 50%;
+}
+.progress-bar{
+    border: 1px solid var(--light-grey);
+    background: var(--white);
+    border-radius: 50%;
+    height: 80%;
+    width: 80%;
+    place-content: center;
+}
+.progress-percent{
+    font-size: 70px;
+    font-style: italic;
+}
+.checklist-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.Complete-lbl{
+    font-size: 20px;
+    margin: 30px 15px 20px 1px;
+}
+.checklist {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background: var(--light-grey);
+    padding: 1.5rem;
+    border-radius: 2rem;
+    gap: 15px;
+    height: 100%;
+}
+
+.checklist p:nth-child(1){
+    text-decoration: line-through;
+    color: var(--grey);
+}
+.checklist p:nth-child(2){
+    text-decoration: line-through;
+    color: var(--grey);
+}
+.checklist p:nth-child(3){
+    text-decoration: line-through;
+    color: var(--grey);
+}
+
+@media (max-width: 1000px){
+    .results-container{
+        flex-direction: column;
+        gap: 0;
+        margin-left: 40px;
+    }
+    .progress-bar-container{
+    height: 50%;
+    width: 50%;
+    }.progress-percent{
+        font-size: 35px;
+    }    
+    
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Gomolemo">
+    <title>UI form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header></header>
+    <main class="main-container">
+        <section class="form-container">
+            <form action="">
+
+                <div class="first prompt">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" placeholder="What should we call you?" id="fullname">
+                </div>
+                <div class="second prompt">
+                    <label for="email">Email</label>
+                    <input type="email" value="john@doe.com" id="email" >
+                    <label for="">Email is already taken</label>
+                </div>
+                <div class="third prompt">
+                    <label for="password">Enter Password</label>
+                    <input type="password" placeholder="xxxxxxxx" id="password">
+                </div>
+                <div class="fourth prompt">
+                    <label for="password">Confirm Password</label>
+                    <input type="password" placeholder="xxxxxxxx" id="password">
+                </div>
+                <button class="update-btn">Update Profile</button>
+
+
+            </form>
+        </section>
+        <section class="results-container">
+            <div class="progress-bar-container">
+                <div class="progress-bar">
+                    <div class="progress-percent">65%</div>
+                </div>
+            </div>
+            <div class="checklist-container">
+                <p class="Complete-lbl">Profile Completeness</p>
+                    <div class="checklist">
+                        <p>Create Account</p>
+                        <p>Update Roadmap Progress</p>
+                        <p>Setup Public Profile</p>
+                        <p>Complete your first project</p>
+                        <p>Invite your Friends</p>
+                    </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
