@@ -8,30 +8,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header></header>
+    
     <main class="main-container">
         <section class="form-container">
             <form action="">
 
                 <div class="first prompt">
                     <label for="fullname">Full Name</label>
-                    <input type="text" placeholder="What should we call you?" id="fullname">
+                    <input type="text" placeholder="What should we call you?" id="fullname" required>
                 </div>
+
+
                 <div class="second prompt">
                     <label for="email">Email</label>
-                    <input type="email" value="john@doe.com" id="email" >
-                    <label for="">Email is already taken</label>
+                    <input type="email" placeholder="john@doe.com" id="email" required>
                 </div>
+
+
                 <div class="third prompt">
                     <label for="password">Enter Password</label>
-                    <input type="password" placeholder="xxxxxxxx" id="password">
+                    <input type="password" placeholder="xxxxxxxx" id="password" required>
+                    <div id="wrong-password"></div>
                 </div>
+
+
                 <div class="fourth prompt">
                     <label for="password">Confirm Password</label>
-                    <input type="password" placeholder="xxxxxxxx" id="password">
+                    <input type="password" placeholder="xxxxxxxx" id="confirm-password" required>
                 </div>
-                <button class="update-btn">Update Profile</button>
 
+
+                <button  class="update-btn" id="update-btn">Update Profile</button>
+                <!-- onclick="updateProfile()" -->
 
             </form>
         </section>
@@ -53,6 +61,6 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <script src="main.js"></script>
 </body>
 </html>

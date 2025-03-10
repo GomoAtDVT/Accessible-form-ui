@@ -7,6 +7,7 @@
     --black: black;
     --white: white;
     --red: red;
+    --blue: blue;
     --grey: grey;
     --light-grey: rgb(205, 204, 204);
 }
@@ -40,14 +41,9 @@ body{
     padding: 6px;
     border-radius: 7px;
 }
-.second label:last-child{
-    color: var(--red);
-    font-size: 15px;
-    margin-left: 3px;
-}
-.second input{
-    color: var(--red);
-    border: 2px solid var(--red);
+.prompt input:hover, .prompt input:focus {
+    border: 2px solid var(--blue);
+    outline: none;
 }
 
 .update-btn {
@@ -59,6 +55,11 @@ body{
     border-radius: 7px;
     width: 100%;
     cursor: pointer;
+}
+.error{
+    color: var(--red);
+    font-size: 15px;
+    margin-left: 3px;
 }
 
 .results-container{
